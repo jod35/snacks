@@ -19,9 +19,9 @@
       <div class="main-header">
         <h1>Snacks</h1>
         {% if current_user.is_authenticated %}
-            <a href="/logout">Log Out</a>
+            <a href="/logout" class="btn btn-primary">Log Out</a>
         {%else%}
-            <a href="/login">Login</a>
+            <a href="/login" class="btn btn-primary">Login</a>
         {% endif %}
         
       </div>

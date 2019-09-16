@@ -1,5 +1,6 @@
 body {
   background-color: lightgray;
+  color: #499edb;
 }
 
 .main-header {
@@ -20,4 +21,20 @@ body {
 }
 .welcome{
   padding:100px;
+}
+.myform{
+  border-top: lightgray;
+  border-left: lightgray;
+  border-right: lightgray;
+  border-bottom-color: #499edb;
+  color: #499edb;
+  background-color: lightgray;
+  
+}
+textarea{
+  background-color: lightgray;
+  border-top: lightgray;
+  border-left: lightgray;
+  border-right: lightgray;
+  color: #499edb;
 }

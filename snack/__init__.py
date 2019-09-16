@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+
 from snack.config import DevConfig
 
 app=Flask(__name__)

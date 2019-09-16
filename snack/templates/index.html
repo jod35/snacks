@@ -3,7 +3,8 @@
 <center>
 <div class="jumbotron">
   {% if current_user.is_authenticated %}
-     <h1 class="welcome">Welcome</h1> 
+     <h1 class="welcome">Welcome</h1>
+     <a href="/snacks">Snacks</a> 
   {%else%}
     <h1>Want A Snack?</h1>
     <h2>Buy one here!</h2>

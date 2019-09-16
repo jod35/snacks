@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{% block body%}
+{%with messages = get_flashed_messages()%}
+{% if messages %}
+{% for message in messages %}
+   <center>
+     <div class="flash">
+       {{message}}
+     </div>
+   </center>
+{% endfor %}
+{% endif %}
+{%endwith%}
+<center>
+    <h3>Add A Snack</h3>
+    <form action="/addsnacks" method="post">
+     <p>Name</p>
+     <input type="text" name="name" id="" class="myform">
+     <p>Quantity</p>
+     <input type="text" name="quantity" id="" class="myform">
+     <p>Price</p>
+     <input type="number" name="price" id="" class="myform">
+     <p>Description</p>
+     <textarea name="description" class="myform" id="" cols="30" rows="5"></textarea>
+     <br>
+     <br>
+     <input type="submit" value="Add" class="btn btn-primary">
+    
+    </form>
+
+   <table class="table">
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Price</th>
+               <th>Quantity</th>
+           </tr>
+       </thead>
+       <tbody>
+          
+           <tr>
+               <td scope="row">{{snack.name}}</td>
+               <td>{{snack.price}}</td>
+               <td>{{snack.quantity}}</td>
+           </tr>
+       </tbody>
+   </table>
+    
+</center>
+{% endblock %}
+
+

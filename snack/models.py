@@ -15,3 +15,14 @@ class User(db.Model,UserMixin):
 
     def __repr__(self):
         return '{}'.format(self.name)
+
+
+class snack(db.Model):
+    id=db.Column(db.Integer(),primary_key=True)
+    name=db.Column(db.String(),nullable=False)
+    quantity=db.Column(db.Integer(),nullable=False)
+    price=db.Column(db.Integer(),nullable=False)
+    description=db.Column(db.Text(),nullable=False)
+
+    def __repr__(self):
+        return '{}'.format(self.name)
