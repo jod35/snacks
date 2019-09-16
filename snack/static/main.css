@@ -1,0 +1,16 @@
+body {
+  background-color: lightgray;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #499edb;
+  color: rgb(252, 250, 250);
+}
+
+.main-header a {
+  color: white;
+  font-size: 20px;
+}
